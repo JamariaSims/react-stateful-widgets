@@ -14,7 +14,7 @@ export default function Squares() {
 	};
 
 	const markActive = (id) => {
-		id === activeSquare ? null : setActiveSquare(id);
+		id === activeSquare ? setActiveSquare(null) : setActiveSquare(id);
 	};
 	return (
 		<div className="widget-squares container">
